@@ -1,0 +1,62 @@
+/* dashboard.css - Dashboard Layout */
+
+/* 5 Column Bootstrap layout for summary cards */
+@media (min-width: 768px) {
+    .col-md-2-4 {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+/* Glassmorphism navigation bar */
+.bg-glass {
+    background: rgba(18, 19, 22, 0.7) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-color: var(--border-color) !important;
+}
+
+/* Glassmorphism cards */
+.card-glass {
+    background: var(--bg-card) !important;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--border-color) !important;
+    border-radius: 14px !important;
+    transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.card-glass:hover {
+    border-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+/* Card Badge utilities */
+.bg-glass-badge {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.bg-glass-sub {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Max height helper filters */
+.max-height-filters {
+    max-height: 110px;
+}
+
+/* Input Fields styling */
+.bg-glass-input {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.bg-glass-input:focus {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border-color: #3b82f6 !important;
+    box-shadow: none !important;
+}

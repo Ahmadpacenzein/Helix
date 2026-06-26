@@ -1,0 +1,128 @@
+/* components.css - Reusable Components */
+
+/* Square icon helper in cards */
+.icon-square {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+}
+
+/* Loading overlays */
+.loading-overlay {
+    backdrop-filter: blur(8px);
+    transition: opacity 0.3s ease;
+}
+
+/* Custom time slider style */
+.form-range::-webkit-slider-runnable-track {
+    background: rgba(255, 255, 255, 0.1);
+    height: 6px;
+    border-radius: 3px;
+}
+
+.form-range::-webkit-slider-thumb {
+    background: #3b82f6;
+    width: 16px;
+    height: 16px;
+    margin-top: -5px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+    transition: transform 0.1s ease;
+}
+
+.form-range::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+}
+
+/* Category Filter pill */
+.category-pill {
+    cursor: pointer;
+    font-size: 0.82rem;
+    padding: 0.35rem 0.75rem;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: var(--text-secondary);
+    transition: all 0.2s ease;
+    user-select: none;
+}
+
+.category-pill:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+}
+
+.category-pill.active {
+    background: #3b82f6;
+    border-color: #3b82f6;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+/* Live Feed items */
+.feed-item {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 0.65rem 0.85rem;
+    transition: all 0.2s ease;
+}
+
+.feed-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.12);
+    transform: translateX(4px);
+}
+
+.feed-item.active {
+    background: rgba(59, 130, 246, 0.1);
+    border-color: #3b82f6;
+}
+
+/* Details panel components */
+.detail-meta-item {
+    font-size: 0.88rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.detail-meta-item:last-child {
+    border-bottom: none;
+}
+
+/* MapLibre markers styling */
+.helix-marker {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background: radial-gradient(circle, #ef4444 0%, #b91c1c 100%);
+    box-shadow: 0 0 10px rgba(239, 68, 68, 0.6);
+    transition: transform 0.15s ease;
+}
+
+.helix-marker:hover {
+    transform: scale(1.2);
+}
+
+/* MapLibre popup style override */
+.maplibregl-popup-content {
+    background: rgba(18, 19, 22, 0.9) !important;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white !important;
+    border-radius: 8px !important;
+    padding: 10px 15px !important;
+}
+
+.maplibregl-popup-anchor-top .maplibregl-popup-tip {
+    border-bottom-color: rgba(18, 19, 22, 0.9) !important;
+}
+.maplibregl-popup-anchor-bottom .maplibregl-popup-tip {
+    border-top-color: rgba(18, 19, 22, 0.9) !important;
+}

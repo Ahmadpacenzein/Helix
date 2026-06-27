@@ -6,7 +6,7 @@ Proyek ini mendemonstrasikan implementasi NoSQL Data Modeling menggunakan MongoD
 
 ---
 
-## 🌟 Fitur Utama
+##  Fitur Utama
 1. **Peta Interaktif (MapLibre GL)**: Visualisasi lokasi bencana dengan penanda dinamis berkode warna berdasarkan kategori hazard.
 2. **Dashboard Summary Cards**: Menampilkan metrik total bencana, status aktif, jumlah kategori, dan negara terdampak.
 3. **Penyaring Kategori & Waktu**: Memfilter sebaran peta secara langsung tanpa memuat ulang halaman (*No Page Reload*).
@@ -16,14 +16,14 @@ Proyek ini mendemonstrasikan implementasi NoSQL Data Modeling menggunakan MongoD
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 * **Frontend**: HTML5, Vanilla CSS (Glassmorphism design system), Bootstrap 5, Vanilla JavaScript, MapLibre GL JS, Chart.js.
 * **Backend**: Python 3.12, Flask, APScheduler (Background Scheduler), PyMongo, Requests.
 * **Database**: MongoDB Community Edition.
 
 ---
 
-## 📸 Dokumentasi & Screenshots
+##  Dokumentasi & Screenshots
 
 Berikut adalah seluruh visualisasi dan dokumentasi antarmuka serta sistem database aplikasi HELIX:
 
@@ -65,7 +65,7 @@ Hasil kompilasi dan agregasi data yang siap disajikan ke frontend, memisahkan st
 
 ---
 
-## 🚀 Panduan Instalasi & Penggunaan
+##  Panduan Instalasi & Penggunaan
 
 ### 1. Prasyarat
 Sebelum memulai, pastikan perangkat Anda memiliki:
